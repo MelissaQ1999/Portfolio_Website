@@ -1,0 +1,7 @@
+/* In this CSS file you will find the style for the home page */
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
