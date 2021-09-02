@@ -1,4 +1,6 @@
-/* In this CSS file you will find the basic style that is throughout the whole site the same, for example text and buttons. */
+/*-----------------------------------------------------------------------------------------------------------------------------
+    In this CSS file you will find the basic style that is throughout the whole site the same, for example text and buttons.
+------------------------------------------------------------------------------------------------------------------------------*/
 
 /* The fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
@@ -11,6 +13,7 @@
     --secondary: #EDEDED;
 }
 
+/* This removes the default generated style */
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +21,9 @@
     text-decoration: none;
 }
 
+html {
+    min-height: 100%;
+}
 
 /* The CSS for the background gradient */
 body { 
@@ -26,6 +32,14 @@ body {
     width: 100%;
 }
 
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*--------------------------------------------------
+    Website loader
+---------------------------------------------------*/
 #doc-loader {
     background: #08262A;
     height: 100%;
