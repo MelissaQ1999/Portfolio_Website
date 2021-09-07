@@ -2,3 +2,305 @@
     In this CSS file you will find the style for the header with navigation, needed for every page.
 ------------------------------------------------------------------------------------------------------*/
 
+/* The size, color and position of the header are determined here */
+header {
+    background-color: #000;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    height: 60px;
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+}
+
+/* This activates when the hamburger menu is active */
+header.act {
+    position: relative;
+}
+
+/* The position and size of the logo */
+a.logo {
+    display: inline-block;
+    margin: 10px 0 0 15px;
+}
+
+a.logo img {
+    width: auto;
+    height: 45px;
+}
+
+/*--------------------------------------------------
+    The hamburgermenu button
+---------------------------------------------------*/
+/* The element that contains the menu */
+.menuBtn {
+    cursor: pointer;
+    width: 30px; 
+    height: 25px;
+    margin: auto;
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    z-index: 101;
+}
+
+/* This is where the bars are created */
+i.bar {
+    background-color: #FFF;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+/* The animation of the bars is determined below */
+i.bar:nth-child(1) {
+    animation:outT 0.8s backwards;
+    animation-direction:reverse;
+}
+
+i.bar:nth-child(2) {
+    margin: 5px 0;
+    animation:outM 0.8s backwards;
+    animation-direction:reverse;
+}
+
+i.bar:nth-child(3) {
+    animation:outBtm 0.8s backwards;
+    animation-direction:reverse;
+}
+
+.active i.bar:nth-child(1) {
+    animation:inT 0.8s forwards;
+}
+
+.active i.bar:nth-child(2) {
+    animation:inM 0.8s forwards;
+}
+
+.active i.bar:nth-child(3) {
+    animation:inBtm 0.8s forwards;
+}
+
+@keyframes inM{
+    50%{transform:rotate(0deg);}
+    100%{transform:rotate(45deg);}
+}
+
+@keyframes outM{
+    50%{transform:rotate(0deg);}
+    100%{transform:rotate(45deg);}
+}
+
+@keyframes inT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+}
+
+@keyframes outT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+}
+
+@keyframes inBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
+}
+
+@keyframes outBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
+}
+
+/* Main menu block */
+.mainMenu {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50% 0 0 50%;
+    transition: .5s ease-in-out;
+    text-align: center;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* This activates when the hamburger menu is active */
+.mainMenu.act {
+    width: 100vw;
+    height: 250vw;
+    border-radius: 0;
+    display: table;
+}
+
+.mainMenu.act ul li {
+    opacity: 1;
+}
+
+/* The position of the menu items */
+.mainMenu ul.nav {
+    top: 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* The animation on the menu items */
+.mainMenu li {
+    padding: 10px 0;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in;
+    transition-delay: 500ms;
+    opacity: 0;
+}
+
+/* The layout of the main menu items in normal state */
+a.nav-item {
+    color: #FFF;
+    display: inline-block;
+    font-family: 'Playfair Display', Georgia, Times, serif;
+    font-size: 24px;
+    line-height: 27px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* The layout of the main menu items when you hover over them */
+a.nav-item:hover {
+    color: var(--primary);
+}
+
+/* The format of the main menu items when it is active */
+#selected {
+    color: var(--primary);
+}
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    header {
+        height: 70px;
+    }
+
+    .menuBtn {
+        top: 25px;
+        right: 20px;
+    }
+
+    a.logo img {
+        height: 55px;
+    }
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    .menuBtn {
+        right: 35px;
+    }
+
+    a.logo {
+        margin-left: 35px;
+    }
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    header {
+        height: 85px;
+    }
+
+    a.logo {
+        margin: 15px 0 0 50px;
+    }
+    
+    a.logo img {
+        height: 60px;
+    }
+
+    .menuBtn {
+        visibility: hidden;
+    }
+
+    nav.mainMenu{
+		opacity: 1;
+        color: black;
+        transform: scale(1);
+        transition: none;
+        height: 100%;
+        width: auto;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        display: table;
+        transition: none;
+    }
+
+    .mainMenu ul {
+        justify-content: space-between;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    ul.nav {
+        padding-right: 15px;
+    }
+
+    .mainMenu li {
+        transition: none;
+        opacity: 1;
+        display: inline-block;
+        margin-right: 35px;
+    }
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    a.logo {
+        margin-left: 100px;
+    }
+
+    ul.nav {
+        padding-right: 65px;
+    }
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    header {
+        height: 100px;
+    }
+
+    a.logo {
+        margin: 20px 0 0 200px;
+    }
+    
+    a.logo img {
+        height: 70px;
+    }
+
+    ul.nav {
+        padding-right: 165px;
+    }
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    a.logo {
+        margin-left: 250px;
+    }
+
+    ul.nav {
+        padding-right: 215px;
+    }
+}

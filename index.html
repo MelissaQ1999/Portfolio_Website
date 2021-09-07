@@ -56,23 +56,72 @@
 
     </head>
 
-    <!-- This is the HTML for the homepage -->
+    <!-- This is the HTML for the homepage
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <body>
+        <!-- Here the site loader is called -->
         <div id="doc-loader">
             <div id="loaderInner"></div>
         </div>
+
+        <!-- Here starts the menu
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header>
+            <!-- Hier bevindt zich het logo -->
+			<a href="index.html" class="logo">
+                <img src="logo/logo_my_wit.svg" alt="Logo van de website">
+            </a>
+            <!-- Het hamburger menu wordt hier aangemaakt -->
+			<div class="menuBtn">
+                <i class="bar"></i><i class="bar"></i><i class="bar"></i>
+            </div>
+            <!-- De menu items bevinden zich hieronder -->
+			<nav class="mainMenu">
+				<ul class="nav">
+					<li>
+						<a class="nav-item" id="selected" href="index.html">Home</a>
+					</li>
+					<li>
+                        <a class="nav-item" href="pages/over-mij.html">Over mij</a>
+                    </li>
+					<li>
+                        <a class="nav-item" href="pages/mijn-werk.html">Mijn werk</a>
+                    </li>
+                    <li>
+						<a class="nav-item" href="pages/contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+        </header>
+
+        <!-- Here starts the main content of the website
+        ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <main>
-            
+            <section class="me">
+                <div class="meText">
+                    <h2>Hi! Hallo, ik ben</h2>
+                    <h1 class="name">Melissa van Dijk</h1>
+                    <h2>UX/UI Designer</h2>
+                </div>
+
+            </section>
         </main>
+
+        <!-- Here starts the footer of the website
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <footer>
+            <!-- Social icons -->
             <p>
                 <a href="https://www.linkedin.com/in/melissa-van-dijk" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://nl.pinterest.com/mqvandijk" target="_blank"><i class="fab fa-pinterest"></i></a>
                 <a href="https://www.instagram.com/my.point.of.focus" target="_blank"><i class="fab fa-instagram"></i></a>
             </p>
-            <a href="" target="_blank">
-                <button class="primary cv" type="button">CV</button><!-- This button is located between link tags, so that you will be taken to the linked page when you click on it -->
+            <!-- CV Button -->
+            <a href="documents/CV_Melissa_van_Dijk.pdf" target="_blank">
+                <!-- This button is located between link tags, so that you will be taken to the linked page when you click on it -->
+                <button class="primary cv" type="button">CV</button>
             </a>
+            <!-- Copyright line -->
             <p class="copy">&copy; 2021 - Melissa van Dijk</p>
         </footer>
     </body>
