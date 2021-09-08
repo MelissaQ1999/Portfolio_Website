@@ -7,6 +7,27 @@
 @import 'header.css';
 @import 'footer.css';
 
+/*--------------------------------------------------
+    Everything within the .me section
+---------------------------------------------------*/
+.meText {
+    margin: 45px 0 0 15px;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+.name:hover {
+    color: #FFF;
+    font-family: 'New Rocker', cursive;
+    font-weight: bold;
+    font-size: 53px;
+}
+
+.profession {
+    margin-top: 5px;
+}
 
 /*--------------------------------------------------
     The breakpoints
@@ -14,30 +35,102 @@
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
+    .meText {
+        margin: 50px 0 0 20px;
+    }
     
+    .name {
+        margin-top: 25px;
+    }
+    
+    .profession {
+        margin-top: 10px;
+    }
 }
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
+    .meText {
+        margin: 55px 0 0 35px;
+    }
     
+    .name {
+        margin-top: 35px;
+    }
+    
+    .name:hover {
+        font-size: 64px;
+    }
+    
+    .profession {
+        margin-top: 15px;
+    }
 }
 
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
+    .meText {
+        margin: 75px 0 0 50px;
+    }
     
+    .name {
+        margin-top: 45px;
+    }
+    
+    .profession {
+        margin-top: 20px;
+    }
 }
 
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
+    .meText {
+        margin: 85px 0 0 100px;
+    }
     
+    .name {
+        margin-top: 50px;
+    }
+    
+    .name:hover {
+        font-size: 76px;
+    }
+    
+    .profession {
+        margin-top: 25px;
+    }
 }
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
+    .meText {
+        margin: 105px 0 0 200px;
+    }
     
+    .name {
+        margin-top: 60px;
+    }
+    
+    .name:hover {
+        font-size: 88px;
+    }
+    
+    .profession {
+        margin-top: 30px;
+    }
 }
 
 /* Desktop version (1920px) */
 @media (min-width: 1920PX) {
-
+    .meText {
+        margin: 150px 0 0 250px;
+    }
+    
+    .name {
+        margin-top: 70px;
+    }
+    
+    .profession {
+        margin-top: 35px;
+    }
 }

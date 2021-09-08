@@ -24,9 +24,14 @@ a.logo {
     margin: 10px 0 0 15px;
 }
 
-a.logo img {
+a.logo svg {
     width: auto;
     height: 45px;
+    stroke: #FFF;
+}
+
+a.logo svg:hover {
+    stroke: var(--primary);
 }
 
 /*--------------------------------------------------
@@ -167,7 +172,7 @@ a.nav-item {
     display: inline-block;
     font-family: 'Playfair Display', Georgia, Times, serif;
     font-size: 24px;
-    line-height: 27px;
+    line-height: 28px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -198,7 +203,7 @@ a.nav-item:hover {
         right: 20px;
     }
 
-    a.logo img {
+    a.logo svg {
         height: 55px;
     }
 }
@@ -212,6 +217,10 @@ a.nav-item:hover {
     a.logo {
         margin-left: 35px;
     }
+
+    .mainMenu li {
+        padding: 15px 0;
+    }
 }
 
 /* Laptop version (1024px) */
@@ -224,7 +233,7 @@ a.nav-item:hover {
         margin: 15px 0 0 50px;
     }
     
-    a.logo img {
+    a.logo svg {
         height: 60px;
     }
 
@@ -271,7 +280,11 @@ a.nav-item:hover {
     }
 
     ul.nav {
-        padding-right: 65px;
+        padding-right: 60px;
+    }
+
+    .mainMenu li {
+        margin-right: 40px;
     }
 }
 
@@ -285,12 +298,16 @@ a.nav-item:hover {
         margin: 20px 0 0 200px;
     }
     
-    a.logo img {
+    a.logo svg {
         height: 70px;
     }
 
     ul.nav {
-        padding-right: 165px;
+        padding-right: 155px;
+    }
+
+    .mainMenu li {
+        margin-right: 45px;
     }
 }
 
