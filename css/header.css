@@ -210,31 +210,8 @@ a.nav-item:hover {
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
-    .menuBtn {
-        right: 35px;
-    }
-
     a.logo {
         margin-left: 35px;
-    }
-
-    .mainMenu li {
-        padding: 15px 0;
-    }
-}
-
-/* Laptop version (1024px) */
-@media (min-width: 1024px) {
-    header {
-        height: 85px;
-    }
-
-    a.logo {
-        margin: 15px 0 0 50px;
-    }
-    
-    a.logo svg {
-        height: 60px;
     }
 
     .menuBtn {
@@ -262,13 +239,36 @@ a.nav-item:hover {
     }
 
     ul.nav {
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     .mainMenu li {
         transition: none;
         opacity: 1;
         display: inline-block;
+        margin-right: 25px;
+    }
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    header {
+        height: 85px;
+    }
+
+    a.logo {
+        margin: 15px 0 0 50px;
+    }
+    
+    a.logo svg {
+        height: 60px;
+    }
+
+    ul.nav {
+        padding-right: 15px;
+    }
+
+    .mainMenu li {
         margin-right: 35px;
     }
 }

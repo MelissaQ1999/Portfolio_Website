@@ -7,11 +7,38 @@
 @import 'header.css';
 @import 'footer.css';
 
+main {
+    background-color: #08262A; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#08262A, #000, #08262A);
+    width: 100%;
+}
+
 /*--------------------------------------------------
     Everything within the .me section
 ---------------------------------------------------*/
+section.me {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 15px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+}
+
+.meText, .mePhoto, .moony, .arrow {
+    grid-column: 1 / span 12;
+    grid-row-start: 1;
+}
+
+/* This is for the text */
 .meText {
-    margin: 45px 0 0 15px;
+    padding-top: 45px;
+    margin: 0 15px 0 15px;
+    z-index: 3;
+}
+
+.meText h2, h1 {
+    text-shadow: 0px 0px 4px #000000;
 }
 
 .name {
@@ -29,14 +56,153 @@
     margin-top: 5px;
 }
 
+/* This is the code for my photo */
+.mePhoto {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: none;
+    z-index: 2;
+}
+
+.mePhoto img {
+    height: auto;
+    width: 250px;
+    margin-right: 25%;
+}
+
+/* Here is the code for the lpMoon */
+.moony {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+
+.lpMoon {
+    width: auto;
+    height: 540px;
+    margin-left: 50px;
+}
+
+/* Here the scroll arrow is created / edited */
+div.arrow {
+    top: 580px;
+}
+
+.arrow,
+.arrow:before {
+    position: absolute;
+    left: 50%;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -20px 0 0 -10px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+  
+.arrow:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
+}
+
+
+/*--------------------------------------------------
+    Everything within the .overMij article
+---------------------------------------------------*/
+button.btnDif {
+    width: 155px;
+}
+
+
+
 /*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
+/* Speciale media queries for the lpMoon */
+@media (min-width: 356px) {
+    .moony {
+        height: 475px;
+    }
+
+    .lpMoon {
+        margin-top: -32px;
+        margin-left: 70px;
+    }
+
+    div.arrow {
+        top: 520px;
+    }
+}
+/*----------------------------------------*/
+
+/* Speciale media queries for the lpMoon */
+@media (min-width: 366px) {
+    .moony {
+        height: 420px;
+    }
+
+    .lpMoon {
+        margin-top: -60px;
+        margin-left: 80px;
+    }
+
+    div.arrow {
+        top: 460px;
+    }
+}
+/*----------------------------------------*/
+
+/* Speciale media queries for the lpMoon */
+@media (min-width: 427px) {
+    .moony {
+        height: 325px;
+    }
+
+    .lpMoon {
+        margin-top: -108px;
+        margin-left: 165px;
+    }
+
+    div.arrow {
+        top: 368px;
+    }
+}
+/*----------------------------------------*/
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
+    /* Everything within the .me section */
     .meText {
-        margin: 50px 0 0 20px;
+        padding-top: 50px;
+        margin: 0 20px 0 20px;
+        width: 415px;
     }
     
     .name {
@@ -46,12 +212,37 @@
     .profession {
         margin-top: 10px;
     }
+
+    .moony {
+        height: 350px;
+    }
+
+    .lpMoon {
+        margin-top: -95px;
+    }
+
+    div.arrow {
+        top: 400px;
+    }
+    /*----------------------------------------*/
+}
+
+/* Speciale media queries for the lpMoon */
+@media (min-width: 640px) {
+    .moony {
+        display: grid;
+        justify-content: end;
+        margin-left: 0px;
+    }
 }
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
+    /* Everything within the .me section */
     .meText {
-        margin: 55px 0 0 35px;
+        padding-top: 55px;
+        margin: 0px 0px 0 35px;
+        width: 485px;
     }
     
     .name {
@@ -65,12 +256,69 @@
     .profession {
         margin-top: 15px;
     }
+
+    .moony {
+        height: 395px;
+    }
+
+    .lpMoon {
+        margin-top: -73px;
+    }
+
+    div.arrow {
+        top: 440px;
+    }
+
+    .arrow {
+        width: 25px;
+        height: 25px;
+        margin: -20px 0 0 -20px;
+    }
+    /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    button.btnDif {
+        width: 175px;
+    }
+}
+
+/* Speciale media queries for the mePhoto */
+@media (min-width: 880px) {
+    .mePhoto {
+        display: inherit;
+        z-index: 2;
+    }
+    
+    .mePhoto img {
+        width: 275px;
+    }
+
+    .moony {
+        height: 440px;
+    }
+
+    .lpMoon {
+        margin-top: -50px;
+    }
+
+    div.arrow {
+        top: 475px;
+    }
+
+    .arrow {
+        width: 30px;
+        height: 30px;
+        margin: -20px 0 0 -20px;
+    }
 }
 
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
+    /* Everything within the .me section */
     .meText {
-        margin: 75px 0 0 50px;
+        padding-top: 75px;
+        margin-left: 50px;
+        width: 500px;
     }
     
     .name {
@@ -80,12 +328,34 @@
     .profession {
         margin-top: 20px;
     }
+
+    .mePhoto img {
+        width: 325px;
+        margin-bottom: 25px;
+    }
+
+    .moony {
+        height: 550px;
+    }
+
+    .lpMoon {
+        margin-top: -65px;
+        height: 670px;
+    }
+
+    div.arrow {
+        top: 595px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
+    /* Everything within the .me section */
     .meText {
-        margin: 85px 0 0 100px;
+        padding-top: 85px;
+        margin-left: 100px;
+        width: 580px;
     }
     
     .name {
@@ -99,12 +369,39 @@
     .profession {
         margin-top: 25px;
     }
+
+    .mePhoto img {
+        width: 415px;
+        margin-bottom: 25px;
+    }
+
+    .moony {
+        height: 650px;
+    }
+
+    .lpMoon {
+        margin-top: -130px;
+        height: 850px;
+    }
+
+    div.arrow {
+        top: 675px;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
+    /* Everything within the .me section */
     .meText {
-        margin: 105px 0 0 200px;
+        padding-top: 105px;
+        margin-left: 200px;
+        width: 680px;
     }
     
     .name {
@@ -118,12 +415,33 @@
     .profession {
         margin-top: 30px;
     }
+
+    .mePhoto img {
+        width: 530px;
+        margin-bottom: 45px;
+    }
+
+    .moony {
+        height: 835px;
+    }
+
+    .lpMoon {
+        margin-top: -180px;
+        height: 1100px;
+    }
+
+    div.arrow {
+        top: 860px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Desktop version (1920px) */
-@media (min-width: 1920PX) {
+@media (min-width: 1920PX){
+    /* Everything within the .me section */
     .meText {
-        margin: 150px 0 0 250px;
+        padding-top: 150px;
+        margin-left: 250px;
     }
     
     .name {
@@ -133,4 +451,23 @@
     .profession {
         margin-top: 35px;
     }
+
+    .mePhoto img {
+        width: 620px;
+        margin-bottom: 55px;
+    }
+
+    .moony {
+        height: 1000px;
+    }
+
+    .lpMoon {
+        margin-top: -230px;
+        height: 1340px;
+    }
+
+    div.arrow {
+        top: 1030px;
+    }
+    /*----------------------------------------*/
 }
