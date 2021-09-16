@@ -10,12 +10,12 @@
 main {
     background-color: #08262A; /* For browsers that do not support gradients */
     background-image: linear-gradient(#08262A, #000, #08262A);
-    width: 100%;
 }
 
 /*--------------------------------------------------
     Everything within the .me section
 ---------------------------------------------------*/
+/* Set up the grid */
 section.me {
     width: 100%;
     display: grid;
@@ -25,6 +25,7 @@ section.me {
     grid-auto-columns: auto auto;
 }
 
+/* Applying the grid */
 .meText, .mePhoto, .moony, .arrow {
     grid-column: 1 / span 12;
     grid-row-start: 1;
@@ -100,7 +101,7 @@ div.arrow {
     height: 20px;
     top: 50%;
     margin: -20px 0 0 -10px;
-    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     border-left: none;
     border-top: none;
     border-right: 2px #fff solid;
@@ -136,15 +137,147 @@ div.arrow {
 /*--------------------------------------------------
     Everything within the .overMij article
 ---------------------------------------------------*/
+.overMij{
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 25px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.omTitle, .pictureMe, .meIntro {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+.pictureMe {
+    width: 250px;
+    height: 250px;
+}
+
+.pictureMe img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
 button.btnDif {
     width: 155px;
 }
 
 
+/*--------------------------------------------------
+    The .quote article
+---------------------------------------------------*/
+article.quote {
+    background-color: #FFF;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.quote h2 {
+    color: #000;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the short intro bits of my work
+--------------------------------------------------*/
+/* The layout of the photos */
+.werk figure {
+    margin-right: auto;
+}
+  
+.BKimg, .WGJimg, .RAimg {
+    width: 250px;
+    height: 250px;
+}
+  
+.BKimg img, .WGJimg img, .RAimg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+h3.web {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Set up the grid */
+.werk {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Applying the grid */
+.BK, .BKimg, .WGJ, .WGJimg, .R2025A, .RAimg {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+.werkAll {
+    grid-column: 1 / span 12;
+    text-align: center;
+}
+
+h3.WGJ, h3.R2025A, .werkAll {
+    margin-top: 25px;
+}
+
+
+/*--------------------------------------------------
+    The .contact article
+---------------------------------------------------*/
+article.contact {
+    background-color: #FFF;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.contact h2, .contact a button {
+    color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contact a button {
+    margin-bottom: 8px !important;
+}
+
 
 /*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
+@media (min-width: 320px) {
+    .pictureMe, .BKimg, .WGJimg, .RAimg {
+        width: 290px;
+        height: 290px;
+    }
+}
+
 /* Speciale media queries for the lpMoon */
 @media (min-width: 356px) {
     .moony {
@@ -225,6 +358,56 @@ button.btnDif {
         top: 400px;
     }
     /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    .overMij{
+        grid-row-gap: 30px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .pictureMe {
+        width: 300px;
+        height: 300px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .quote h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .BKimg, .WGJimg, .RAimg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .werk {
+        grid-row-gap: 25px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Speciale media queries for the lpMoon */
@@ -277,9 +460,102 @@ button.btnDif {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
-    button.btnDif {
-        width: 175px;
+    .omTitle {
+        margin-bottom: 40px;
     }
+
+    button.btnDif {
+        width: 180px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .quote h2 {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .BKimg, .WGJimg, .RAimg {
+        width: 295px;
+        height: 295px;
+    }
+
+    .werk {
+        grid-row-gap: 65px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    h3.web {
+        visibility: visible;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    h3.app {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .werk figure, .BK, .WGJ, .R2025A {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    figure.aanmelden {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .BKimg {
+        grid-row: 1;
+        grid-column: 1 / span 6;
+    }
+    
+    .BK {
+        grid-row: 1;
+        grid-column: 7 / span 6;
+    }
+
+    .WGJ {
+        grid-row: 2;
+        grid-column: 1 / span 6;
+    }
+    
+    .WGJimg {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
+
+    .RAimg {
+        grid-row: 3;
+        grid-column: 1 / span 6;
+    }
+    
+    .R2025A {
+        grid-row: 3;
+        grid-column: 7 / span 6;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Speciale media queries for the mePhoto */
@@ -347,6 +623,53 @@ button.btnDif {
         top: 595px;
     }
     /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    .omTitle {
+        margin-bottom: 50px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .quote h2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 75px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 335px;
+        height: 335px;
+    }
+
+    h3.web {
+        margin-bottom: 25px;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Larger laptop version (1280px) */
@@ -393,6 +716,53 @@ button.btnDif {
         height: 40px;
     }
     /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    .omTitle {
+        margin-bottom: 60px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .quote h2 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 85px;
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 385px;
+        height: 385px;
+    }
+
+    h3.web {
+        margin-bottom: 30px;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Intermediate version of laptop and desktop (1680px) */
@@ -434,6 +804,53 @@ button.btnDif {
         top: 860px;
     }
     /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    .omTitle {
+        margin-bottom: 70px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .quote h2 {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 105px;
+        margin-top: 105px;
+        margin-bottom: 105px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 425px;
+        height: 425px;
+    }
+
+    h3.web {
+        margin-bottom: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Desktop version (1920px) */
@@ -468,6 +885,53 @@ button.btnDif {
 
     div.arrow {
         top: 1030px;
+    }
+    /*----------------------------------------*/
+
+    /* Everything within the .overMij article */
+    .omTitle {
+        margin-bottom: 80px;
+    }
+    /*----------------------------------------*/
+
+    /* The .quote article */
+    article.quote {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .quote h2 {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 150px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 500px;
+        height: 500px;
+    }
+
+    h3.web {
+        margin-bottom: 40px;
+    }
+    /*----------------------------------------*/
+
+    /* The .contact article */
+    article.contact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .contact h2, .contact a button {
+        margin-left: 250px;
+        margin-right: 250px;
     }
     /*----------------------------------------*/
 }
