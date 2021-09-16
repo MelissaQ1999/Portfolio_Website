@@ -232,10 +232,10 @@ a:hover {
 
     button.primary, button.secondary {
         font-size: 22px;
-        padding: 8px 20px;
+        padding: 8px 15px;
         margin-top: 35px;
         height: 50px;
-        width: 150px;
+        width: 155px;
     }
 }
 
