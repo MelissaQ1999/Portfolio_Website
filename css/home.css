@@ -7,10 +7,10 @@
 @import 'header.css';
 @import 'footer.css';
 
-main {
-    background-color: #08262A; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#08262A, #000, #08262A);
-}
+/*main {
+    background-color: #08262A;*/ /* For browsers that do not support gradients */
+    /*background-image: linear-gradient(#08262A, #000, #08262A);
+}*/
 
 /*--------------------------------------------------
     Everything within the .me section
@@ -23,6 +23,7 @@ section.me {
     grid-row-gap: 15px;
     grid-auto-rows: auto auto;
     grid-auto-columns: auto auto;
+    z-index: -1;
 }
 
 /* Applying the grid */
@@ -64,12 +65,12 @@ section.me {
     align-items: flex-end;
     display: none;
     z-index: 2;
+    margin-right: 8%;
 }
 
 .mePhoto img {
     height: auto;
     width: 250px;
-    margin-right: 25%;
 }
 
 /* Here is the code for the lpMoon */
@@ -147,7 +148,7 @@ div.arrow {
     margin-bottom: 40px;
 }
 
-.omTitle, .pictureMe, .meIntro {
+.omTitle, .pictureMe, .meIntro1, .meIntro2 {
     grid-column: 1 / span 12;
     text-align: left;
 }
@@ -169,6 +170,11 @@ button.btnDif {
     width: 155px;
 }
 
+.meIntro {
+    visibility: hidden;
+    position: absolute;
+}
+
 
 /*--------------------------------------------------
     The .quote article
@@ -179,7 +185,7 @@ article.quote {
     width: 100vw;
     left: calc(-50vw + 50%);
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .quote h2 {
@@ -375,7 +381,7 @@ article.contact {
     /* The .quote article */
     article.quote {
         padding-top: 25px;
-        padding-bottom: 25px;
+        padding-bottom: 30px;
     }
 
     .quote h2 {
@@ -460,19 +466,41 @@ article.contact {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
+    .overMij{
+        padding-top: 55px;
+        margin-bottom: 55px;
+    }
+
     .omTitle {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     button.btnDif {
         width: 180px;
+    }
+
+    .pictureMe {
+        grid-column: 1 / span 6;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 295px;
+        height: 295px;
+    }
+
+    .meIntro1 {
+        grid-column: 7 / span 6;
+    }
+
+    .meIntro2 {
+        grid-column: 1 / span 12;
     }
     /*----------------------------------------*/
 
     /* The .quote article */
     article.quote {
         padding-top: 35px;
-        padding-bottom: 35px;
+        padding-bottom: 40px;
     }
 
     .quote h2 {
@@ -491,6 +519,10 @@ article.contact {
         grid-row-gap: 65px;
         margin-top: 55px;
         margin-bottom: 55px;
+    }
+
+    .werk figure {
+        margin-right: 0px;
     }
 
     h3.web {
@@ -516,32 +548,36 @@ article.contact {
 
     .BKimg {
         grid-row: 1;
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
     }
     
     .BK {
         grid-row: 1;
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
     }
 
     .WGJ {
         grid-row: 2;
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
     }
     
     .WGJimg {
         grid-row: 2;
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
     }
 
     .RAimg {
         grid-row: 3;
-        grid-column: 1 / span 6;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
     }
     
     .R2025A {
         grid-row: 3;
-        grid-column: 7 / span 6;
+        grid-column: 1 / span 6;
     }
     /*----------------------------------------*/
 
@@ -625,15 +661,37 @@ article.contact {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
+    .overMij{
+        padding-top: 75px;
+        margin-bottom: 75px;
+    }
+
     .omTitle {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .pictureMe {
+        grid-row: 2;
+        width: 335px;
+        height: 335px;
+    }
+
+    .meIntro1 {
+        grid-row: 2;
+        grid-column: 6 / span 7;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .meIntro2 {
+        grid-column: 1 / span 10;
     }
     /*----------------------------------------*/
 
     /* The .quote article */
     article.quote {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 
     .quote h2 {
@@ -656,6 +714,21 @@ article.contact {
 
     h3.web {
         margin-bottom: 25px;
+    }
+    
+    .BK {
+        grid-row: 1;
+        grid-column: 1 / span 7;
+    }
+
+    .WGJ {
+        grid-row: 2;
+        grid-column: 6 / span 7;
+    }
+    
+    .R2025A {
+        grid-row: 3;
+        grid-column: 1 / span 7;
     }
     /*----------------------------------------*/
 
@@ -718,15 +791,26 @@ article.contact {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
+    .overMij{
+        grid-row-gap: 35px;
+        padding-top: 85px;
+        margin-bottom: 85px;
+    }
+
     .omTitle {
-        margin-bottom: 60px;
+        margin-bottom: 25px;
+    }
+
+    .pictureMe {
+        width: 385px;
+        height: 385px;
     }
     /*----------------------------------------*/
 
     /* The .quote article */
     article.quote {
         padding-top: 65px;
-        padding-bottom: 65px;
+        padding-bottom: 75px;
     }
 
     .quote h2 {
@@ -767,7 +851,7 @@ article.contact {
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
-    /* Everything within the .me section */
+    /* Everything within the .me section */ 
     .meText {
         padding-top: 105px;
         margin-left: 200px;
@@ -806,15 +890,40 @@ article.contact {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
+    .overMij{
+        padding-top: 105px;
+        margin-bottom: 105px;
+        grid-row-gap: 0px;
+    }
+
     .omTitle {
         margin-bottom: 70px;
+    }
+
+    .pictureMe {
+        width: 425px;
+        height: 455px;
+    }
+
+    .meIntro1, .meIntro2 {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .meIntro {
+        grid-row: 2;
+        grid-column: 6 / span 7;
+        margin-top: auto;
+        margin-bottom: auto;
+        visibility: visible;
+        position: relative;
     }
     /*----------------------------------------*/
 
     /* The .quote article */
     article.quote {
         padding-top: 85px;
-        padding-bottom: 85px;
+        padding-bottom: 95px;
     }
 
     .quote h2 {
@@ -889,15 +998,25 @@ article.contact {
     /*----------------------------------------*/
 
     /* Everything within the .overMij article */
+    .overMij{
+        padding-top: 150px;
+        margin-bottom: 150px;
+    }
+
     .omTitle {
         margin-bottom: 80px;
+    }
+
+    .pictureMe {
+        width: 500px;
+        height: 500px;
     }
     /*----------------------------------------*/
 
     /* The .quote article */
     article.quote {
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 115px;
     }
 
     .quote h2 {
