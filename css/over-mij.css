@@ -13,12 +13,21 @@
 ---------------------------------------------------*/
 .pageTitle {
     margin-top: 25px;
+    text-align: center;
 }
 
 .stripe {
     text-align: center;
 }
 
+.pageTitle2 {
+    text-align: center;
+}
+
+
+/*--------------------------------------------------
+    Everything within the .moreMe article
+---------------------------------------------------*/
 /* The layout of the photos */
 .pictureMe1, .pictureMe2 {
     width: 250px;
@@ -59,6 +68,41 @@
     text-align: left;
 }
 
+
+/*--------------------------------------------------
+    Everything within the .skills article
+---------------------------------------------------*/
+article.skills {
+    background-color: #FFF;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+}
+
+.skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+    color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Set up the grid */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Applying the grid */
+.skills h2, .skill1, .skill2, .skill3 {
+    grid-column: 1 / span 12;
+    text-align: center;
+}
+
+
 /*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
@@ -71,10 +115,13 @@
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 30px;
     }
+    /*----------------------------------------*/
 
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 300px;
         height: 300px;
@@ -89,19 +136,28 @@
     .meInfo1 {
         margin-bottom: 15px;
     }
+    /*----------------------------------------*/
+
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .skills {
+        grid-row-gap: 25px;
+    }
 }
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 35px;
-        text-align: center;
     }
+    /*----------------------------------------*/
 
-    .pageTitle2 {
-        text-align: center;
-    }
-
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 295px;
         height: 295px;
@@ -155,15 +211,40 @@
     .meInfo2Split2 {
         grid-column: 1 / span 12;
     }
-/*----------------------------------------*/
+    /*----------------------------------------*/
+
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
+    .skills {
+        grid-row-gap: 40px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .skill1 {
+        grid-row: 2;
+        grid-column: 1 / span 6;
+    }
+
+    .skill2 {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
 }
 
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 50px;
     }
+    /*----------------------------------------*/
 
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 335px;
         height: 335px;
@@ -197,12 +278,39 @@
     .meInfo2Split2 {
         grid-column: 1 / span 10;
     }
+    /*----------------------------------------*/
+
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     
-/*----------------------------------------*/
+    .skills {
+        grid-row-gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .skill1 {
+        grid-row: 2;
+        grid-column: 1 / span 4;
+    }
+
+    .skill2 {
+        grid-row: 2;
+        grid-column: 5 / span 4;
+    }
+
+    .skill3 {
+        grid-row: 2;
+        grid-column: 9 / span 4;
+    }
 }
 
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 65px;
     }
@@ -211,7 +319,9 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    /*----------------------------------------*/
 
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 385px;
         height: 385px;
@@ -226,12 +336,24 @@
     .meInfo1Split2 {
         margin-bottom: 40px;
     }
+    /*----------------------------------------*/
 
-/*----------------------------------------*/
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .skills {
+        grid-row-gap: 60px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
 }
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 85px;
     }
@@ -240,7 +362,9 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    /*----------------------------------------*/
 
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 425px;
         height: 425px;
@@ -284,11 +408,24 @@
         margin-top: auto;
         margin-bottom: auto;
     }
-/*----------------------------------------*/
+    /*----------------------------------------*/
+
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    .skills {
+        grid-row-gap: 70px;
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
 }
 
 /* Desktop version (1920px) */
 @media (min-width: 1920PX) {
+    /* The pageTitle */
     .pageTitle {
         margin-top: 100px;
     }
@@ -297,7 +434,9 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    /*----------------------------------------*/
 
+    /* Everything within the .moreMe article */
     .pictureMe1, .pictureMe2 {
         width: 500px;
         height: 500px;
@@ -308,5 +447,17 @@
         margin-top: 150px;
         margin-bottom: 150px;
     }
-/*----------------------------------------*/
+    /*----------------------------------------*/
+
+    /* Everything within the .skills article */
+    .skills h2, .skill1 h4, .skill1 ul li p, .skill2 h4, .skill2 ul li p, .skill3 h4, .skill3 ul li p {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    
+    .skills {
+        grid-row-gap: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
