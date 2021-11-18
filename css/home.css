@@ -903,6 +903,8 @@ article.contact {
     .pictureMe {
         width: 425px;
         height: 455px;
+        margin-top: 11px;
+        margin-bottom: 0px;
     }
 
     .meIntro1, .meIntro2 {
@@ -1010,6 +1012,8 @@ article.contact {
     .pictureMe {
         width: 500px;
         height: 500px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     /*----------------------------------------*/
 
