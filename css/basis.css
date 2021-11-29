@@ -142,6 +142,12 @@ button.primary:hover {
     color: #FFF;
 }
 
+/* This causes the button to change when you hover over it */
+button.primary.active {
+    background-color: var(--primary);
+    color: #FFF;
+}
+
 /* Here you can edit the secondary button */
 button.secondary {
     background-color: #FFF;
