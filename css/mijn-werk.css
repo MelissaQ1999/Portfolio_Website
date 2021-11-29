@@ -9,35 +9,221 @@
 
 
 /*--------------------------------------------------
+    The intro of this page
+---------------------------------------------------*/
+.workIntro h2 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.workIntro p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*--------------------------------------------------
+    The portfolio gallery with filtering
+---------------------------------------------------*/
+article.portfolio {
+    background-color: #FFF;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+}
+
+.portfolio h3 {
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#filterButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* .btn {
+
+} */
+
+.portItem {
+    display: none; /* Hide all elements by default */
+}
+
+.werk:after {
+    content: "";
+    clear: both;
+}
+
+/* Set up the grid */
+.werk {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Applying the grid */
+.portItem {
+    grid-column: 1 / span 12;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Content */
+.pcontent {
+    background-color: #AAAAAA;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.pcontent:hover .middle {
+    opacity: 1;
+}
+
+.pcontent:hover .image {
+    transition: all .5s ease-in-out;
+    filter: blur(2px);
+}
+
+.text h4 {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+
+/*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
+    /* The intro of this page */
+    .workIntro h2 {
+        margin-top: 30px;
+    }
     
+    .workIntro p {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    /*----------------------------------------*/
+
+    /* The portfolio gallery with filtering */
+    .portfolio h3 {
+        padding-top: 25px;
+    }
+
+    #filterButtons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .werk {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
+    /* The intro of this page */
+    .workIntro h2 {
+        margin-top: 35px;
+    }
     
+    .workIntro p {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    /*----------------------------------------*/
+
+    /* The portfolio gallery with filtering */
+    .portfolio h3 {
+        padding-top: 35px;
+    }
+
+    #filterButtons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .werk {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
 }
 
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
-    
+
+    /*----------------------------------------*/
 }
 
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
-    
+
+    /*----------------------------------------*/
 }
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
-    
+
+    /*----------------------------------------*/
 }
 
 /* Desktop version (1920px) */
 @media (min-width: 1920PX) {
 
+    /*----------------------------------------*/
 }

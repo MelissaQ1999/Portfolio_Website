@@ -21,6 +21,7 @@
         <script src="https://kit.fontawesome.com/60bf54ff8c.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="../script/main.js" defer></script>
+        <script src="../script/psorting.js" defer></script>
 
     </head>
 
@@ -96,10 +97,162 @@
         <!-- Here starts the main content of the website
         ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <main>
-            <h2><q>Ontwerpen vanuit een verhaal, met oog voor detail.</q></h2>
-            <section class="">
-                
+            
+            <!-- This is an introduction for my work -->
+            <section class="workIntro">
+                <h2><q>Ontwerpen vanuit een verhaal, met oog voor detail.</q></h2>
+                <p>
+                    Volgens dat motto ga ik altijd ijverig aan de slag. Afhankelijk van het project begin ik altijd met onderzoek, vaak in de vorm van deskresearch, interviews en/of observaties. Wanneer ik genoeg informatie verzameld heb begin ik met het creëren van een concept. Dit concept is dan de basis wat gaandeweg verder wordt uitgebreid. Vervolgens verwerk ik de concept ideeën tot een gebruiksvriendelijk, interactief ontwerp in de vorm van een prototype. Tussendoor voer ik verschillende gebruikerstesten uit om zo problemen op te sporen en te verhelpen. Op die manier kan ik uiteindelijk een goed product opleveren.
+                </p>
             </section>
+
+
+            <article class="portfolio">
+                <h3>Mijn werk</h3>
+                <div id="filterButtons">
+                    <button class="primary btn active" onclick="filterSelection('all')">Alles</button>
+                    <button class="primary btn" onclick="filterSelection('uxui')">UX/UI</button>
+                    <button class="primary btn" onclick="filterSelection('frontend')">Front-end</button>
+                    <button class="primary btn" onclick="filterSelection('drukwerk')">Drukwerk</button>
+                    <!-- <button class="primary btn" onclick="filterSelection('fotovid')">Foto/video</button> -->
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <section class="werk">
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Brouwerij_Kwartje.png" alt="Website Brouwerij Kwartje" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Brouwerij Kwartje</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem drukwerk">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Waardenbon_Schiet.png" alt="Waardebon SV Generaal Joubert" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Waardebon SV Generaal Joubert</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Robotica_App.png" alt="App Robotica 2025" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Robotica 2025</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Therapieland.png" alt="Therapieland website" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Therapieland</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem frontend">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/SpaceX_challenges.png" alt="Drie samengevoegde SpaceX websites" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>SpaceX</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem drukwerk">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Greenpeace.png" alt="Greenpeace campagneboekje" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Greenpeace</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/ROC_Mondriaan.png" alt="ROC Mondriaan app" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>ROC Mondriaan</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/Concerto.png" alt="Concerto website" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Concerto</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem uxui">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/TechDealsNL.png" alt="Herontwerp TechDeals Asia" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>Herontwerp TechDeals Asia</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="portItem drukwerk">
+                        <figure class="pcontent">
+                            <a href="">
+                                <img src="../photos_work/CMD_Toolkit.png" alt="Boekje CMD Toolkit" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4>CMD Toolkid</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                    
+                </section>
+
+            </article>
+
         </main>
 
         <!-- Here starts the footer of the website
