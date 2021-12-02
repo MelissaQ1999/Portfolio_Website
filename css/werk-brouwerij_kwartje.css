@@ -1,0 +1,402 @@
+/*-----------------------------------------------------------------------------
+    In this CSS file you will find the style for the Brouwerij Kwartje page.
+-----------------------------------------------------------------------------*/
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    background-color: #08262A; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#08262A, #000, #08262A);
+    position: relative;
+    margin-top: 191px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the banner
+---------------------------------------------------*/
+section.banner {
+    overflow: hidden;
+}
+
+/* The banner image with text */
+.headimg {
+    min-height: 200px;
+    width: 100%;
+    background-image: url(../photos_work/Brouwerij_Kwartje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* This will create an overlay over the banner image */
+.headimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.banner-text {
+    margin-left: 30px;
+    margin-right: 30px;
+    position: fixed;
+}
+
+.banner-text h2 {
+	text-align: center;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/*--------------------------------------------------
+    CSS for the short intro bits of my work
+--------------------------------------------------*/
+/* The layout of the photos */
+.werk figure {
+    margin-right: auto;
+}
+  
+.BKimg, .WGJimg, .RAimg {
+    width: 250px;
+    height: 250px;
+}
+  
+.BKimg img, .WGJimg img, .RAimg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+h3.web {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Set up the grid */
+.werk {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Applying the grid */
+.BK, .BKimg, .WGJ, .WGJimg, .R2025A, .RAimg {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+h3.WGJ, h3.R2025A {
+    margin-top: 25px;
+}
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+@media (min-width: 320px) {
+    .BKimg, .WGJimg, .RAimg {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+@media (min-width: 441px) {
+    main {
+        margin-top: 128px;
+    }
+
+    /* The banner */
+    .banner-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+}
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    main {
+        margin-top: 168px;
+    }
+
+    /* The banner */
+    .banner-text h2 {
+        margin-top: 50px;
+        margin-bottom: 55px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .BKimg, .WGJimg, .RAimg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .werk {
+        grid-row-gap: 25px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    main {
+        margin-top: 214px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 350px;
+    }
+
+    .banner-text h2 {
+        margin-top: 70px;
+        margin-bottom: 75px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .BKimg, .WGJimg, .RAimg {
+        width: 295px;
+        height: 295px;
+    }
+
+    .werk {
+        grid-row-gap: 65px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    .werk figure {
+        margin-right: 0px;
+    }
+
+    h3.web {
+        visibility: visible;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    h3.app {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .werk figure, .BK, .WGJ, .R2025A {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    figure.aanmelden {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .BKimg {
+        grid-row: 1;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    .BK {
+        grid-row: 1;
+        grid-column: 1 / span 6;
+    }
+
+    .WGJ {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
+    
+    .WGJimg {
+        grid-row: 2;
+        grid-column: 1 / span 6;
+    }
+
+    .RAimg {
+        grid-row: 3;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    .R2025A {
+        grid-row: 3;
+        grid-column: 1 / span 6;
+    }
+    /*----------------------------------------*/
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    main {
+        margin-top: 274px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 440px;
+    }
+
+    .banner-text h2 {
+        margin-top: 100px;
+        margin-bottom: 105px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 75px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 335px;
+        height: 335px;
+    }
+
+    h3.web {
+        margin-bottom: 25px;
+    }
+    
+    .BK {
+        grid-row: 1;
+        grid-column: 1 / span 7;
+    }
+
+    .WGJ {
+        grid-row: 2;
+        grid-column: 6 / span 7;
+    }
+    
+    .R2025A {
+        grid-row: 3;
+        grid-column: 1 / span 7;
+    }
+    /*----------------------------------------*/
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    main {
+        margin-top: 341px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 480px;
+    }
+
+    .banner-text h2 {
+        margin-top: 130px;
+        margin-bottom: 135px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 85px;
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 385px;
+        height: 385px;
+    }
+
+    h3.web {
+        margin-bottom: 30px;
+    }
+    /*----------------------------------------*/
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    main {
+        margin-top: 430px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 600px;
+    }
+
+    .banner-text h2 {
+        margin-top: 170px;
+        margin-bottom: 175px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 105px;
+        margin-top: 105px;
+        margin-bottom: 105px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 425px;
+        height: 425px;
+    }
+
+    h3.web {
+        margin-bottom: 35px;
+    }
+    /*----------------------------------------*/
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    main {
+        margin-top: 490px;
+    }
+
+    /* The banner */
+    .banner-text h2 {
+        margin-top: 200px;
+        margin-bottom: 205px;
+    }
+    /*----------------------------------------*/
+
+    /* The short intro bits of my work */
+    .werk {
+        grid-row-gap: 150px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .BKimg, .WGJimg, .RAimg {
+        width: 500px;
+        height: 500px;
+    }
+
+    h3.web {
+        margin-bottom: 40px;
+    }
+    /*----------------------------------------*/
+}
