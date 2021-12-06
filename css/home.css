@@ -263,7 +263,7 @@ article.contact {
     text-align: center;
 }
 
-.contact h2, .contact a button {
+.contact h2 {
     color: #000;
     margin-left: 15px;
     margin-right: 15px;
@@ -409,7 +409,7 @@ article.contact {
         padding-bottom: 25px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -587,7 +587,7 @@ article.contact {
         padding-bottom: 35px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 35px;
         margin-right: 35px;
     }
@@ -738,7 +738,7 @@ article.contact {
         padding-bottom: 50px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -842,7 +842,7 @@ article.contact {
         padding-bottom: 65px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -957,7 +957,7 @@ article.contact {
         padding-bottom: 85px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 200px;
         margin-right: 200px;
     }
@@ -1052,7 +1052,7 @@ article.contact {
         padding-bottom: 100px;
     }
 
-    .contact h2, .contact a button {
+    .contact h2 {
         margin-left: 250px;
         margin-right: 250px;
     }
