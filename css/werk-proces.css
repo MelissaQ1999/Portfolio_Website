@@ -1,0 +1,858 @@
+/*-----------------------------------------------------------------------------
+    In this CSS file you will find the style for the werk proces pages.
+-----------------------------------------------------------------------------*/
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    background-color: #08262A; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#08262A, #000, #08262A);
+    position: relative;
+    margin-top: 191px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the banner
+---------------------------------------------------*/
+section.banner {
+    overflow: hidden;
+}
+
+/* The banner image with text */
+.headimg {
+    min-height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* This will create an overlay over the banner image */
+.headimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.banner-text {
+    margin-left: 30px;
+    margin-right: 30px;
+    position: fixed;
+}
+
+.banner-text h2 {
+	text-align: center;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/*  Go back button */
+section.goBack button.primary {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding: 4px 10px;
+    margin-top: 25px;
+    height: 40px;
+    width: 120px;
+}
+
+/*--------------------------------------------------
+    The work description
+---------------------------------------------------*/
+.description{
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.description h2, .description p, .workDeets {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+
+/*--------------------------------------------------
+    The .prototype article
+---------------------------------------------------*/
+article.prototype {
+    background-color: #FFF;
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.prototype h3 {
+    color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+br.on1 {
+    display: none;
+}
+
+
+/*--------------------------------------------------
+    CSS for the short process bits of my work
+--------------------------------------------------*/
+.proces {
+    margin-top: 45px;
+}
+
+.procesIntro h2 {
+    text-align: center;
+}
+
+.procesIntro h6 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.procesIntro h6 a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.procesIntro h6 a:hover {
+    color: var(--primary);
+}
+
+br.on {
+    display: none;
+}
+
+/* The layout of the photos */
+.procesParts figure {
+    margin-right: auto;
+}
+  
+.part1img, .part2img, .part3img {
+    width: 250px;
+    height: 250px;
+}
+  
+.part1img img, .part2img img, .part3img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+h3.web {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Set up the grid */
+.procesParts {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    margin-top: 30px;
+}
+
+/* Applying the grid */
+.part1, .part1img, .part2, .part2img, .part3, .part3img {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+h3.part2, h3.part3 {
+    margin-top: 25px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the part to view more projects
+--------------------------------------------------*/
+.projects {
+    margin-top: 45px;
+}
+
+/* Set up the grid */
+.werk {
+    display: grid;
+    grid-template-columns: 270px;
+    grid-row-gap: 20px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* Applying the grid */
+.portItem {
+    grid-column: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Content */
+.pcontent {
+    background-color: #AAAAAA;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.pcontent:hover .middle {
+    opacity: 1;
+}
+
+.pcontent:hover .image {
+    transition: all .5s ease-in-out;
+    filter: blur(2px);
+}
+
+.text h4 {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+@media (min-width: 320px) {
+    .part1img, .part2img, .part3img {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+@media (min-width: 441px) {
+    main {
+        margin-top: 128px;
+    }
+
+    /* The banner */
+    .banner-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+}
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    main {
+        margin-top: 168px;
+    }
+
+    /* The banner */
+    .banner-text h2 {
+        margin-top: 50px;
+        margin-bottom: 55px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 25px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .prototype h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 50px;
+    }
+
+    .part1img, .part2img, .part3img {
+        width: 379px;
+        height: 300px;
+    }
+
+    .procesParts {
+        grid-row-gap: 25px;
+        margin-top: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 50px;
+    }
+
+    .projects h2 {
+        text-align: center;
+    }
+
+    .werk {
+        grid-template-columns: 320px;
+        padding-bottom: 25px;
+    }
+
+    .pcontent {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    main {
+        margin-top: 214px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 350px;
+    }
+
+    .banner-text h2 {
+        margin-top: 70px;
+        margin-bottom: 75px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 40px;
+        grid-column-gap: 35px;
+        margin-top: 35px;
+        margin-bottom: 55px;
+    }
+
+    .description h2 {
+        text-align: center;
+    }
+
+    .description p {
+        grid-column: 1 / span 8;
+    }
+
+    .workDeets {
+        grid-column: 9 / span 4;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .prototype h3 {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 55px;
+    }
+
+    .procesIntro h6 {
+        margin-top: 20px;
+    }
+
+    br.on {
+        display: unset;
+    }
+
+    .part1img, .part2img, .part3img {
+        width: 295px;
+        height: 295px;
+    }
+
+    .procesParts {
+        grid-row-gap: 65px;
+        margin-top: 55px;
+    }
+
+    .procesParts figure {
+        margin-right: 0px;
+    }
+
+    h3.web {
+        visibility: visible;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    h3.app {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .procesParts figure, .part1, .part2, .part3 {
+        /* margin-top: auto; */
+        margin-bottom: auto;
+    }
+
+    figure.aanmelden {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .part1img {
+        grid-row: 1;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    .part1 {
+        grid-row: 1;
+        grid-column: 1 / span 6;
+    }
+
+    .part2 {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
+    
+    .part2img {
+        grid-row: 2;
+        grid-column: 1 / span 6;
+    }
+
+    .part3img {
+        grid-row: 3;
+        grid-column: 7 / span 6;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    .part3 {
+        grid-row: 3;
+        grid-column: 1 / span 6;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 55px;
+    }
+
+    /* Set up the grid */
+    .werk {
+        grid-template-columns: 310px 310px;
+        grid-column-gap: 20px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .pcontent {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    main {
+        margin-top: 274px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 440px;
+    }
+
+    .banner-text h2 {
+        margin-top: 100px;
+        margin-bottom: 105px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 50px;
+        grid-column-gap: 45px;
+        margin-bottom: 75px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .prototype h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    br.on1 {
+        display: unset;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 75px;
+    }
+
+    .procesIntro h6 {
+        margin-top: 30px;
+    }
+
+    .procesParts {
+        grid-row-gap: 75px;
+        margin-top: 75px;
+    }
+
+    .part1img, .part2img, .part3img {
+        width: 400px;
+        height: 335px;
+    }
+
+    h3.web {
+        margin-bottom: 25px;
+    }
+    
+    .part1 {
+        grid-row: 1;
+        grid-column: 1 / span 6;
+    }
+
+    .part2 {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
+    
+    .part3 {
+        grid-row: 3;
+        grid-column: 1 / span 6;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 75px;
+    }
+
+    /* Set up the grid */
+    .werk {
+        grid-template-columns: 310px 310px;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    main {
+        margin-top: 341px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 480px;
+    }
+
+    .banner-text h2 {
+        margin-top: 130px;
+        margin-bottom: 135px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 60px;
+        grid-column-gap: 50px;
+        margin-top: 40px;
+        margin-bottom: 85px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .prototype h3 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 85px;
+    }
+
+    .procesIntro h6 {
+        margin-top: 35px;
+    }
+
+    .procesParts {
+        grid-row-gap: 85px;
+        margin-top: 85px;
+    }
+
+    .part1img, .part2img, .part3img {
+        width: auto;
+        height: 385px;
+    }
+
+    .part1img {
+        grid-column: 8 / span 5;
+        justify-self: stretch;
+    }
+    
+    .part2img {
+        grid-column: 1 / span 5;
+        justify-self: stretch;
+    }
+
+    .part3img {
+        grid-column: 8 / span 5;
+        justify-self: stretch;
+    }
+
+    h3.web {
+        margin-bottom: 30px;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 85px;
+    }
+
+    .werk {
+        grid-template-columns: 340px 340px 340px;
+        padding-top: 50px;
+        padding-bottom: 65px;
+    }
+
+    .pcontent {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    main {
+        margin-top: 430px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 600px;
+    }
+
+    .banner-text h2 {
+        margin-top: 170px;
+        margin-bottom: 175px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 70px;
+        grid-column-gap: 0px;
+        margin-top: 50px;
+        margin-bottom: 105px;
+    }
+
+    .description p {
+        grid-column: 1 / span 7;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .prototype h3 {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 105px;
+    }
+
+    .procesIntro h6 {
+        margin-top: 45px;
+    }
+
+    .procesParts {
+        grid-row-gap: 105px;
+        margin-top: 105px;
+    }
+
+    .part1img, .part2img, .part3img {
+        height: 415px;
+    }
+
+    h3.web {
+        margin-bottom: 35px;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 105px;
+    }
+
+    .werk {
+        grid-template-columns: 410px 410px 410px;
+        padding-top: 65px;
+        padding-bottom: 85px;
+    }
+
+    .pcontent {
+        width: 390px;
+        height: 390px;
+    }
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    main {
+        margin-top: 490px;
+    }
+
+    /* The banner */
+    .banner-text h2 {
+        margin-top: 200px;
+        margin-bottom: 205px;
+    }
+    /*----------------------------------------*/
+
+    /* The work description */
+    .description{
+        grid-row-gap: 80px;
+        margin-top: 85px;
+        margin-bottom: 150px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    article.prototype {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .prototype h3 {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    .proces {
+        margin-top: 150px;
+    }
+
+    .procesIntro h6 {
+        margin-top: 50px;
+    }
+
+    .procesParts {
+        grid-row-gap: 150px;
+        margin-top: 150px;
+    }
+
+    .part1img, .part2img, .part3img {
+        height: 455px;
+    }
+
+    h3.web {
+        margin-bottom: 40px;
+    }
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    .projects {
+        margin-top: 150px;
+    }
+
+    .werk {
+        grid-template-columns: 455px 455px 455px;
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+
+    .pcontent {
+        width: 435px;
+        height: 435px;
+    }
+}
