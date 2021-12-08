@@ -204,12 +204,12 @@ article.quote {
     margin-right: auto;
 }
   
-.BKimg, .WGJimg, .RAimg {
+.BKimg, .WGJimg, .SXimg {
     width: 250px;
     height: 250px;
 }
   
-.BKimg img, .WGJimg img, .RAimg img {
+.BKimg img, .WGJimg img, .SXimg img {
     display: block;
     width: 100%;
     height: 100%;
@@ -235,7 +235,7 @@ h3.web {
 }
 
 /* Applying the grid */
-.BK, .BKimg, .WGJ, .WGJimg, .R2025A, .RAimg {
+.BK, .BKimg, .WGJ, .WGJimg, .SX, .SXimg {
     grid-column: 1 / span 12;
     text-align: left;
 }
@@ -245,7 +245,7 @@ h3.web {
     text-align: center;
 }
 
-h3.WGJ, h3.R2025A, .werkAll {
+h3.WGJ, h3.SX, .werkAll {
     margin-top: 25px;
 }
 
@@ -278,7 +278,7 @@ article.contact {
     The breakpoints
 ---------------------------------------------------*/
 @media (min-width: 320px) {
-    .pictureMe, .BKimg, .WGJimg, .RAimg {
+    .pictureMe, .BKimg, .WGJimg, .SXimg {
         width: 290px;
         height: 290px;
     }
@@ -391,7 +391,7 @@ article.contact {
     /*----------------------------------------*/
 
     /* The short intro bits of my work */
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 300px;
         height: 300px;
     }
@@ -510,7 +510,7 @@ article.contact {
     /*----------------------------------------*/
 
     /* The short intro bits of my work */
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 295px;
         height: 295px;
     }
@@ -536,7 +536,7 @@ article.contact {
         position: absolute;
     }
 
-    .werk figure, .BK, .WGJ, .R2025A {
+    .werk figure, .BK, .WGJ, .SX {
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -568,14 +568,14 @@ article.contact {
         grid-column: 1 / span 6;
     }
 
-    .RAimg {
+    .SXimg {
         grid-row: 3;
         grid-column: 7 / span 6;
         margin-left: auto;
         margin-right: 0px;
     }
     
-    .R2025A {
+    .SX {
         grid-row: 3;
         grid-column: 1 / span 6;
     }
@@ -707,7 +707,7 @@ article.contact {
         margin-bottom: 75px;
     }
 
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 335px;
         height: 335px;
     }
@@ -726,7 +726,7 @@ article.contact {
         grid-column: 6 / span 7;
     }
     
-    .R2025A {
+    .SX {
         grid-row: 3;
         grid-column: 1 / span 7;
     }
@@ -826,7 +826,7 @@ article.contact {
         margin-bottom: 85px;
     }
 
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 385px;
         height: 385px;
     }
@@ -941,7 +941,7 @@ article.contact {
         margin-bottom: 105px;
     }
 
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 425px;
         height: 425px;
     }
@@ -1036,7 +1036,7 @@ article.contact {
         margin-bottom: 150px;
     }
 
-    .BKimg, .WGJimg, .RAimg {
+    .BKimg, .WGJimg, .SXimg {
         width: 500px;
         height: 500px;
     }
