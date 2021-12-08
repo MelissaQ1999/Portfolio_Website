@@ -135,6 +135,12 @@ article.portfolio {
     display: block;
 }
 
+/* This causes the button to change when you hover over it */
+button.primary.active {
+    background-color: var(--primary);
+    color: #FFF;
+}
+
 
 /*--------------------------------------------------
     The breakpoints
