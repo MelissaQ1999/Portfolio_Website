@@ -17,3 +17,16 @@ $(document).ready(function(){
         }
     });
 });
+
+// ----- Makes the intro text of this article change ----- //
+$(document).ready(function(){
+    // Button click event
+    $('#toggleBon').click(function(){
+        var x = document.getElementById('toggleText');
+        if (x.innerHTML == 'Klik dan op de knop om de bon te bekijken!') {
+            x.innerHTML = 'Je kunt op de bon klikken om deze om te draaien!';
+        } else {
+            x.innerHTML = 'Klik dan op de knop om de bon te bekijken!';
+        }
+    });
+});
