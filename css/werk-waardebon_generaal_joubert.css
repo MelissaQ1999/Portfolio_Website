@@ -1,0 +1,196 @@
+/*-----------------------------------------------------------------------------
+    In this CSS file you will find the style for the werk proces pages.
+-----------------------------------------------------------------------------*/
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    margin-top: 254px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the banner
+---------------------------------------------------*/
+/* The banner image with text */
+.headimg {
+    min-height: 254px;
+}
+
+
+/*--------------------------------------------------
+    The .prototype article
+---------------------------------------------------*/
+#waardebon {
+    display: none;
+}
+
+.bonGrid {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 10px;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: auto auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bonGrid h5 {
+    grid-column: 1 / span 12;
+    color: #000;
+    text-align: center;
+}
+
+.bonGJ {
+    width: auto;
+    height: auto;
+    grid-column: 1 / span 12;
+    justify-self: stretch;
+}
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+@media (min-width: 412px) {
+    main {
+        margin-top: 191px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 191px;
+    }
+}
+
+@media (min-width: 441px) {
+    main {
+        margin-top: 191px;
+    }
+
+    /* The banner */
+    .banner-text h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    main {
+        margin-top: 231px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 231px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 639px) {
+    main {
+        margin-top: 168px;
+    }
+
+    /* The banner */
+    .headimg {
+        min-height: 168px;
+    }
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    /* The banner */
+    .headimg {
+        min-height: 214px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        grid-row-gap: 15px;
+        margin-top: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    /* The banner */
+    .headimg {
+        min-height: 274px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    /* The banner */
+    .headimg {
+        min-height: 341px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        margin-top: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    /* The banner */
+    .headimg {
+        min-height: 430px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        margin-top: 45px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    /* The banner */
+    .headimg {
+        min-height: 490px;
+    }
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    .bonGrid {
+        margin-top: 50px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .bonGJ {
+        max-width: 1420px;
+    }
+}
