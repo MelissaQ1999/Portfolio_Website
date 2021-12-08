@@ -70,6 +70,7 @@ section.goBack button.primary {
     width: 120px;
 }
 
+
 /*--------------------------------------------------
     The work description
 ---------------------------------------------------*/
@@ -364,7 +365,7 @@ h3.part2, h3.part3 {
 /* Tablet version (768px) */
 @media (min-width: 768px) {
     main {
-        margin-top: 214px;
+        margin-top: 214px !important;
     }
 
     /* The banner */
@@ -516,7 +517,7 @@ h3.part2, h3.part3 {
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
     main {
-        margin-top: 274px;
+        margin-top: 274px !important;
     }
 
     /* The banner */
@@ -611,7 +612,7 @@ h3.part2, h3.part3 {
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
     main {
-        margin-top: 341px;
+        margin-top: 341px !important;
     }
 
     /* The banner */
@@ -705,7 +706,7 @@ h3.part2, h3.part3 {
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
     main {
-        margin-top: 430px;
+        margin-top: 430px !important;
     }
 
     /* The banner */
@@ -787,7 +788,7 @@ h3.part2, h3.part3 {
 /* Desktop version (1920px) */
 @media (min-width: 1920PX) {
     main {
-        margin-top: 490px;
+        margin-top: 490px !important;
     }
 
     /* The banner */
