@@ -1,3 +1,4 @@
+// ----- PORTFOLIO SORTING ----- //
 window.onload = function(){
     
 filterSelection("all")
