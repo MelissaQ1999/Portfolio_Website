@@ -1,0 +1,143 @@
+/*-----------------------------------------------------------------------------
+    In this CSS file you will find the style for the werk proces pages.
+-----------------------------------------------------------------------------*/
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
+
+/*--------------------------------------------------
+    CSS for the banner
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    The work description
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    The .prototype article
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    CSS for the short process bits of my work
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    CSS for the part to view more projects
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    /* The banner */
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    /* The banner */
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    /* The banner */
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+    /*----------------------------------------*/
+
+    /* Set up the grid */
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    /* The banner */
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    /* The banner */
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work *
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    /* The banner *
+    /*----------------------------------------*/
+
+    /* The work description */
+    /*----------------------------------------*/
+
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
