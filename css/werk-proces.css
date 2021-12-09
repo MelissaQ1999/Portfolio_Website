@@ -669,6 +669,7 @@ h3.part2, h3.part3 {
     .part1img {
         grid-column: 8 / span 5;
         justify-self: stretch;
+        margin-left: 0px;
     }
     
     .part2img {
@@ -679,6 +680,7 @@ h3.part2, h3.part3 {
     .part3img {
         grid-column: 8 / span 5;
         justify-self: stretch;
+        margin-left: 0px;
     }
 
     h3.web {
