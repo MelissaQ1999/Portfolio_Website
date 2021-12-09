@@ -1,7 +1,7 @@
 // ----- Shows the voucher of Generaal Joubert ----- //
 $(document).ready(function(){
     $('#toggleBon').click(function(){
-        $("#waardebon").fadeToggle(500);
+        $('#waardebon').fadeToggle(500);
     });
 });
 
@@ -20,13 +20,29 @@ $(document).ready(function(){
 
 // ----- Makes the intro text of this article change ----- //
 $(document).ready(function(){
-    // Button click event
     $('#toggleBon').click(function(){
-        var x = document.getElementById('toggleText');
-        if (x.innerHTML == 'Klik dan op de knop om de bon te bekijken!') {
-            x.innerHTML = 'Je kunt op de bon klikken om deze om te draaien!';
+        $('.toggleTextOff').toggle();
+        $('.toggleTextOn').toggle();
+    });
+});
+
+// ----- Makes the voucher of Generaal Joubert change ----- //
+$(document).ready(function(){
+    // Button click event
+    $('#changeBon').click(function(){
+        var image = document.getElementById('changeBon');
+        if (image.src.match('../photos_work/waardebon_voorkant.png')) {
+            image.src = '../photos_work/waardebon_achterkant.png';
+        }
+        else {
+            image.src = '../photos_work/waardebon_voorkant.png';
+        }
+
+        var text = document.getElementById('changeText');
+        if (text.innerHTML == 'Voorkant') {
+            text.innerHTML = 'Achterkant';
         } else {
-            x.innerHTML = 'Klik dan op de knop om de bon te bekijken!';
+            text.innerHTML = 'Voorkant';
         }
     });
 });

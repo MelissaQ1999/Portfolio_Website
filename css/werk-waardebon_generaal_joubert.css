@@ -24,6 +24,14 @@ main {
 /*--------------------------------------------------
     The .prototype article
 ---------------------------------------------------*/
+.toggleTextOff {
+    display: block;
+}
+
+.toggleTextOn {
+    display: none;
+}
+
 #waardebon {
     display: none;
 }
@@ -50,6 +58,7 @@ main {
     height: auto;
     grid-column: 1 / span 12;
     justify-self: stretch;
+    cursor: pointer;
 }
 
 

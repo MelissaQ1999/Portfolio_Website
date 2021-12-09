@@ -139,16 +139,19 @@
 
             <!-- Here's looking at the prototype encouraged -->
             <article class="prototype">
-                <h3>
+                <h3 class="toggleTextOff">
                     Meer visueel ingesteld?
                     <br class="on1">
-                    <span id="toggleText">Klik dan op de knop om de bon te bekijken!</span>
+                    Klik dan op de knop om de bon te bekijken!
+                </h3>
+                <h3 class="toggleTextOn">
+                    Je kunt op de bon klikken om deze om te draaien!
                 </h3>
                     <button id="toggleBon" class="primary" type="button">Waardebon</button>
                 <div id="waardebon">
                     <section class="bonGrid">
-                        <h5>Voorkant</h5>
-                        <img class="bonGJ" src="../photos_work/waardebon_voorkant.png" alt="De voorkant van de Waardebon voor Generaal Joubert">
+                        <h5 id="changeText">Voorkant</h5>
+                        <img id="changeBon" class="bonGJ" src="../photos_work/waardebon_voorkant.png" alt="De voorkant van de Waardebon voor Generaal Joubert">
                     </section>
                 </div>
             </article>
