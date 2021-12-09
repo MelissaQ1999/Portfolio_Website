@@ -1,0 +1,131 @@
+/*-----------------------------------------------------------------------------
+    In this CSS file you will find the style for the SpaceX werk page.
+-----------------------------------------------------------------------------*/
+
+/* Here you can import all stylesheets */
+@import 'basis.css';
+@import 'header.css';
+@import 'footer.css';
+
+
+/*--------------------------------------------------
+    The .prototype article
+---------------------------------------------------*/
+.challengeButtons {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.challengeButtons a {
+    text-decoration: none;
+}
+
+button.primary.SXbnt1, button.primary.SXbnt2, button.primary.SXbnt3 {
+    width: 130px;
+}
+
+button.primary.SXbnt1 {
+    margin-right: 10px;
+}
+
+
+/*--------------------------------------------------
+    CSS for the short process bits of my work
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    CSS for the part to view more projects
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+
+@media (min-width: 438px) {
+    /* The .prototype article */
+    button.primary.SXbnt2 {
+        margin-right: 10px;
+    }
+}
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    /* The .prototype article */
+    .challengeButtons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    /* The .prototype article */
+    button.primary.SXbnt1, button.primary.SXbnt2, button.primary.SXbnt3 {
+        width: 165px;
+    }
+
+    button.primary.SXbnt1, button.primary.SXbnt2 {
+        margin-right: 20px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Laptop version (1024px) */
+@media (min-width: 1024px) {
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    /* The .prototype article */
+    button.primary.SXbnt1, button.primary.SXbnt2 {
+        margin-right: 30px;
+    }
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Intermediate version of laptop and desktop (1680px) */
+@media (min-width: 1680PX) {
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work *
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
+
+/* Desktop version (1920px) */
+@media (min-width: 1920PX) {
+    /* The .prototype article */
+    /*----------------------------------------*/
+
+    /* The short process bits of my work */
+    /*----------------------------------------*/
+
+    /* the part to view more projects */
+}
