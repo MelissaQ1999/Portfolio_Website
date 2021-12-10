@@ -428,6 +428,8 @@ h3.part2, h3.part3 {
     .part1img, .part2img, .part3img {
         width: 295px;
         height: 295px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .procesParts {
@@ -450,7 +452,7 @@ h3.part2, h3.part3 {
         position: absolute;
     }
 
-    .procesParts figure, .part1, .part2, .part3 {
+    .part1, .part2, .part3 {
         /* margin-top: auto; */
         margin-bottom: auto;
     }
@@ -570,8 +572,25 @@ h3.part2, h3.part3 {
     }
 
     .part1img, .part2img, .part3img {
-        width: 400px;
+        width: auto;
         height: 335px;
+    }
+
+    .part1img {
+        grid-column: 8 / span 5;
+        justify-self: stretch;
+        margin-left: 0px;
+    }
+    
+    .part2img {
+        grid-column: 1 / span 5;
+        justify-self: stretch;
+    }
+
+    .part3img {
+        grid-column: 8 / span 5;
+        justify-self: stretch;
+        margin-left: 0px;
     }
 
     h3.web {
@@ -662,25 +681,7 @@ h3.part2, h3.part3 {
     }
 
     .part1img, .part2img, .part3img {
-        width: auto;
         height: 385px;
-    }
-
-    .part1img {
-        grid-column: 8 / span 5;
-        justify-self: stretch;
-        margin-left: 0px;
-    }
-    
-    .part2img {
-        grid-column: 1 / span 5;
-        justify-self: stretch;
-    }
-
-    .part3img {
-        grid-column: 8 / span 5;
-        justify-self: stretch;
-        margin-left: 0px;
     }
 
     h3.web {
