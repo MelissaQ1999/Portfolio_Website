@@ -2,11 +2,6 @@
     In this CSS file you will find the style for the SpaceX werk page.
 -----------------------------------------------------------------------------*/
 
-/* Here you can import all stylesheets */
-@import 'basis.css';
-@import 'header.css';
-@import 'footer.css';
-
 
 /*--------------------------------------------------
     The .prototype article
@@ -30,16 +25,6 @@ button.primary.SXbnt1 {
 
 
 /*--------------------------------------------------
-    CSS for the short process bits of my work
---------------------------------------------------*/
-
-
-/*--------------------------------------------------
-    CSS for the part to view more projects
---------------------------------------------------*/
-
-
-/*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
 
@@ -57,12 +42,6 @@ button.primary.SXbnt1 {
         margin-left: 20px;
         margin-right: 20px;
     }
-    /*----------------------------------------*/
-
-    /* The short process bits of my work */
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
 }
 
 /* Tablet version (768px) */
@@ -75,23 +54,6 @@ button.primary.SXbnt1 {
     button.primary.SXbnt1, button.primary.SXbnt2 {
         margin-right: 20px;
     }
-    /*----------------------------------------*/
-
-    /* The short process bits of my work */
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
-}
-
-/* Laptop version (1024px) */
-@media (min-width: 1024px) {
-    /* The .prototype article */
-    /*----------------------------------------*/
-
-    /* The short process bits of my work */
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
 }
 
 /* Larger laptop version (1280px) */
@@ -100,32 +62,4 @@ button.primary.SXbnt1 {
     button.primary.SXbnt1, button.primary.SXbnt2 {
         margin-right: 30px;
     }
-    /*----------------------------------------*/
-
-    /* The short process bits of my work */
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
-}
-
-/* Intermediate version of laptop and desktop (1680px) */
-@media (min-width: 1680PX) {
-    /* The .prototype article */
-    /*----------------------------------------*/
-
-    /* The short process bits of my work *
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
-}
-
-/* Desktop version (1920px) */
-@media (min-width: 1920PX) {
-    /* The .prototype article */
-    /*----------------------------------------*/
-
-    /* The short process bits of my work */
-    /*----------------------------------------*/
-
-    /* the part to view more projects */
 }
