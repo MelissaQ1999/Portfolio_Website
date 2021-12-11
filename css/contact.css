@@ -92,6 +92,28 @@ div.contact {
     border-width: 2px;
 }
 
+input[type=submit] {
+    background-color: #FFF;
+    color: var(--primary);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    padding: 4px 10px;
+    margin-top: 25px;
+    border: 3px solid var(--primary);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--primary);
+    color: #FFF;
+}
+
 
 /*--------------------------------------------------
     The breakpoints
@@ -145,6 +167,15 @@ div.contact {
         font-size: 40px;
     }
     /*----------------------------------------*/
+
+    /* The .contactForm article */
+    input[type=submit] {
+        font-size: 22px;
+        padding: 8px 15px;
+        margin-top: 35px;
+        height: 50px;
+        width: 155px;
+    }
 }
 
 /* Laptop version (1024px) */
