@@ -16,12 +16,12 @@ function test_input($data) {
 
 
 // sendgrid
-require '../sendgrid-php/vendor/autoload.php';
+require '../sendgrid/vendor/autoload.php';
 
 $email = new \SendGrid\Mail\Mail(); 
-$email->setFrom("test@example.com", "Example User");
+$email->setFrom("info@melissavandijk.nl", "Melissa van Dijk");
 $email->setSubject("Sending with SendGrid is Fun");
-$email->addTo("test@example.com", "Example User");
+$email->addTo("melissaqvandijk1999@gmail.com", "Melissa van Dijk");
 $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
