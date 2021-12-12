@@ -85,7 +85,7 @@ div.contact {
 /*--------------------------------------------------
     The .contactForm article
 ---------------------------------------------------*/
-.contactForm {
+/* .contactForm {
     background-color: #FFF;
     border-color: #000000;
     border-style: solid;
@@ -112,7 +112,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: var(--primary);
     color: #FFF;
-}
+} */
 
 
 /*--------------------------------------------------
@@ -169,13 +169,13 @@ input[type=submit]:hover {
     /*----------------------------------------*/
 
     /* The .contactForm article */
-    input[type=submit] {
+    /* input[type=submit] {
         font-size: 22px;
         padding: 8px 15px;
         margin-top: 35px;
         height: 50px;
         width: 155px;
-    }
+    } */
 }
 
 /* Laptop version (1024px) */
