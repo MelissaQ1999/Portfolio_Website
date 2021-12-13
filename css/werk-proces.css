@@ -294,7 +294,7 @@ h3.part2, h3.part3 {
 }
 
 @media (min-width: 328px) {
-    main {
+    main.small {
         margin-top: 128px;
     }
 
