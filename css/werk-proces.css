@@ -89,6 +89,15 @@ section.goBack button.primary {
     text-align: left;
 }
 
+.description p a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.description p a:hover {
+    color: var(--primary);
+}
+
 
 /*--------------------------------------------------
     The .prototype article
@@ -111,6 +120,10 @@ article.prototype {
 
 br.on1 {
     display: none;
+}
+
+button.primary.bigger {
+    width: 160px;
 }
 
 
@@ -422,6 +435,10 @@ h3.part2, h3.part3 {
     .prototype h3 {
         margin-left: 35px;
         margin-right: 35px;
+    }
+
+    button.primary.bigger {
+        width: 195px;
     }
     /*----------------------------------------*/
 
