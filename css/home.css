@@ -44,14 +44,8 @@ section.me {
 }
 
 .name {
-    margin-top: 15px;
-}
-
-.name:hover {
-    color: #FFF;
+    margin-top: 10px;
     font-family: 'New Rocker', cursive;
-    font-weight: bold;
-    font-size: 53px;
 }
 
 .profession {
@@ -345,7 +339,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 25px;
+        margin-top: 15px;
     }
     
     .profession {
@@ -435,11 +429,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 35px;
-    }
-    
-    .name:hover {
-        font-size: 64px;
+        margin-top: 20px;
     }
     
     .profession {
@@ -634,7 +624,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 45px;
+        margin-top: 25px;
     }
     
     .profession {
@@ -755,11 +745,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 50px;
-    }
-    
-    .name:hover {
-        font-size: 76px;
+        margin-top: 30px;
     }
     
     .profession {
@@ -859,11 +845,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 60px;
-    }
-    
-    .name:hover {
-        font-size: 88px;
+        margin-top: 35px;
     }
     
     .profession {
@@ -973,7 +955,7 @@ article.contact {
     }
     
     .name {
-        margin-top: 70px;
+        margin-top: 40px;
     }
     
     .profession {

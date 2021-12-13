@@ -280,6 +280,19 @@ h3.part2, h3.part3 {
     }
 }
 
+@media (min-width: 328px) {
+    main {
+        margin-top: 128px;
+    }
+
+    /* The banner */
+    .banner-text.small {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+}
+
 @media (min-width: 441px) {
     main {
         margin-top: 128px;
