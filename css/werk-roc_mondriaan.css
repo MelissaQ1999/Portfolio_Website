@@ -1,0 +1,83 @@
+/*-------------------------------------------------------------------------------
+    In this CSS file you will find the style for the ROC Mondriaan werk page.
+-------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    CSS for the banner
+---------------------------------------------------*/
+
+
+
+/*--------------------------------------------------
+    The .prototype article
+---------------------------------------------------*/
+.prototypeButtons {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.prototypeButtons a {
+    text-decoration: none;
+}
+
+button.primary.ROCbnt1, button.primary.ROCbnt2 {
+    width: 255px;
+}
+
+button.primary.ROCbnt1 {
+    margin-right: 10px;
+}
+
+
+/*--------------------------------------------------
+    The breakpoints
+---------------------------------------------------*/
+@media (min-width: 400px) {
+    main {
+        margin-top: 128px;
+    }
+
+    /* The banner */
+    .banner-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 438px) {
+    /* The .prototype article */
+    button.primary.ROCbnt2 {
+        margin-right: 10px;
+    }
+}
+
+/* Intermediate version of mobile and tablet (450px) */
+@media (min-width: 450px) {
+    /* The .prototype article */
+    .prototypeButtons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Tablet version (768px) */
+@media (min-width: 768px) {
+    /* The .prototype article */
+    button.primary.ROCbnt1, button.primary.ROCbnt2 {
+        width: 315px;
+    }
+
+    button.primary.ROCbnt1 {
+        margin-right: 20px;
+    }
+}
+
+/* Larger laptop version (1280px) */
+@media (min-width: 1280PX) {
+    /* The .prototype article */
+    button.primary.ROCbnt1 {
+        margin-right: 30px;
+    }
+}
