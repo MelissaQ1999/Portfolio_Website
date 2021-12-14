@@ -34,184 +34,186 @@
 
         <!-- Here starts the menu
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <header>
-            <!-- Here is the logo -->
-			<a href="../index.html" class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.39 77.55">
+        <div class="flex-wrapper">
+            <header>
+                <!-- Here is the logo -->
+                <a href="../index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.39 77.55">
+                        <defs>
+                            <style>
+                                .cls-1, .cls-2 {
+                                    fill:none;
+                                    stroke-miterlimit:10;
+                                }
+                                
+                                .cls-1 {
+                                    stroke-width:4px;
+                                }
+                                
+                                .cls-2 {
+                                    stroke-width:5px;
+                                }
+                            </style>
+                        </defs>
+                        <title>My logo</title>
+                        <g id="Layer_1" data-name="Layer 1">
+                            <line class="cls-1" x1="92.02" y1="51.03" x2="115.03" y2="76.2"/>
+                        </g>
+                        <g id="Layer_3" data-name="Layer 3">
+                            <line class="cls-2" x1="30.06" y1="63.62" x2="31.99" y2="2.5"/>
+                            <polyline class="cls-2" points="70.65 2.51 51.32 25.87 51.32 25.87 31.99 2.5"/>
+                            <line class="cls-2" x1="72.58" y1="63.62" x2="70.65" y2="2.5"/>
+                        </g>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2" d="M1.7,26.93h92c38.94,1.8,40.71,59.32,0,61.12H1.7" transform="translate(-1.7 -24.43)"/>
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- The hamburger menu is created here -->
+                <div class="menuBtn">
+                    <i class="bar"></i><i class="bar"></i><i class="bar"></i>
+                </div>
+
+                <!-- The menu items are below -->
+                <nav class="mainMenu">
+                    <ul class="nav">
+                        <li>
+                            <a class="nav-item" href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="over-mij.html">Over mij</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="mijn-werk.html">Mijn werk</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="selected" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <!-- This is the LPMoon svg -->
+            <div class="moony">
+                <svg class="lpMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1300">
                     <defs>
                         <style>
-                            .cls-1, .cls-2 {
-                                fill:none;
-                                stroke-miterlimit:10;
+                            .class-1 {
+                                fill:#08262a;
+                            }
+                                
+                            .class-2 {
+                                fill:#18464d;
+                            }
+                                
+                            .class-3 {
+                                fill:#305c62;
+                            }
+                                
+                            .class-4 {
+                                fill:#568a91;
+                            }
+                                
+                            .class-5 {
+                                fill:#aecace;
+                            }
+                                
+                            .class-6 {
+                                fill:#fff;
                             }
                             
-                            .cls-1 {
-                                stroke-width:4px;
-                            }
-                            
-                            .cls-2 {
-                                stroke-width:5px;
+                            .class-7 {
+                                fill:#f4f4f4;
                             }
                         </style>
                     </defs>
-                    <title>My logo</title>
-                    <g id="Layer_1" data-name="Layer 1">
-                        <line class="cls-1" x1="92.02" y1="51.03" x2="115.03" y2="76.2"/>
-                    </g>
-                    <g id="Layer_3" data-name="Layer 3">
-                        <line class="cls-2" x1="30.06" y1="63.62" x2="31.99" y2="2.5"/>
-                        <polyline class="cls-2" points="70.65 2.51 51.32 25.87 51.32 25.87 31.99 2.5"/>
-                        <line class="cls-2" x1="72.58" y1="63.62" x2="70.65" y2="2.5"/>
-                    </g>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <path class="cls-2" d="M1.7,26.93h92c38.94,1.8,40.71,59.32,0,61.12H1.7" transform="translate(-1.7 -24.43)"/>
+                    <title>It is a LP, it is a moon, It's a LP-Moon!</title>
+                    <g id="Layer_20" data-name="Layer 20">
+                        <g id="Layer_1-2" data-name="Layer 10">
+                            <circle id="Ring_5" data-name="Ring 5" class="class-1" cx="650" cy="650" r="650"/>
+                            <circle id="Ring_4" data-name="Ring 4" class="class-2" cx="650" cy="650" r="575"/>
+                            <circle id="Ring_3" data-name="Ring 3" class="class-3" cx="650" cy="650.5" r="500"/>
+                            <circle id="Ring_2" data-name="Ring 2" class="class-4" cx="650" cy="651" r="425"/>
+                            <circle id="Ring_1" data-name="Ring 1" class="class-5" cx="650" cy="651" r="350"/>
+                            <circle id="Moon" class="class-6" cx="650" cy="651" r="275"/>
+                            <circle id="Small_Spot" data-name="Small Spot" class="class-7" cx="613" cy="499" r="25"/>
+                            <circle id="Big_Spot" data-name="Big Spot" class="class-7" cx="482" cy="618" r="50"/>
+                            <circle id="LP_Gat" data-name="LP Gat" cx="650" cy="651" r="37"/>
+                        </g>
                     </g>
                 </svg>
-            </a>
-
-            <!-- The hamburger menu is created here -->
-			<div class="menuBtn">
-                <i class="bar"></i><i class="bar"></i><i class="bar"></i>
             </div>
 
-            <!-- The menu items are below -->
-			<nav class="mainMenu">
-				<ul class="nav">
-					<li>
-						<a class="nav-item" href="../index.html">Home</a>
-					</li>
-					<li>
-                        <a class="nav-item" href="over-mij.html">Over mij</a>
-                    </li>
-					<li>
-                        <a class="nav-item" href="mijn-werk.html">Mijn werk</a>
-                    </li>
-                    <li>
-						<a class="nav-item" id="selected" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</nav>
-        </header>
-        
-        <!-- This is the LPMoon svg -->
-        <div class="moony">
-            <svg class="lpMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1300">
-                <defs>
-                    <style>
-                        .class-1 {
-                            fill:#08262a;
-                        }
-                            
-                        .class-2 {
-                            fill:#18464d;
-                        }
-                            
-                        .class-3 {
-                            fill:#305c62;
-                        }
-                            
-                        .class-4 {
-                            fill:#568a91;
-                        }
-                            
-                        .class-5 {
-                            fill:#aecace;
-                        }
-                            
-                        .class-6 {
-                            fill:#fff;
-                        }
-                        
-                        .class-7 {
-                            fill:#f4f4f4;
-                        }
-                    </style>
-                </defs>
-                <title>It is a LP, it is a moon, It's a LP-Moon!</title>
-                <g id="Layer_20" data-name="Layer 20">
-                    <g id="Layer_1-2" data-name="Layer 10">
-                        <circle id="Ring_5" data-name="Ring 5" class="class-1" cx="650" cy="650" r="650"/>
-                        <circle id="Ring_4" data-name="Ring 4" class="class-2" cx="650" cy="650" r="575"/>
-                        <circle id="Ring_3" data-name="Ring 3" class="class-3" cx="650" cy="650.5" r="500"/>
-                        <circle id="Ring_2" data-name="Ring 2" class="class-4" cx="650" cy="651" r="425"/>
-                        <circle id="Ring_1" data-name="Ring 1" class="class-5" cx="650" cy="651" r="350"/>
-                        <circle id="Moon" class="class-6" cx="650" cy="651" r="275"/>
-                        <circle id="Small_Spot" data-name="Small Spot" class="class-7" cx="613" cy="499" r="25"/>
-                        <circle id="Big_Spot" data-name="Big Spot" class="class-7" cx="482" cy="618" r="50"/>
-                        <circle id="LP_Gat" data-name="LP Gat" cx="650" cy="651" r="37"/>
-                    </g>
-                </g>
-            </svg>
+            <!-- Here starts the main content of the website
+            ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <main>
+                <!-- This is the page intro text -->
+                <h3 class="pageTitle">
+                    Laten we samen een project starten!
+                    <br class="on1">
+                    Neem gerust contact met mij op.
+                </h3>
+                
+                <!-- Here you find the contactInfo & contactForm cards -->
+                <div class="contact">
+
+                    <!-- This is the contact information -->
+                    <article class="contactInfo">
+                        <section class="mail">
+                            <h4>E-mailadres</h4>
+                            <p><a href="mailto:info@melissavandijk.nl">info@melissavandijk.nl</a></p>
+                        </section>
+                        <section class="tell">
+                            <h4>Mobiele nummer</h4>
+                            <p><a href="tel:+31 6 51062295">+31 6 51062295</a></p>
+                        </section>
+
+                        <!-- Social icons -->
+                        <p class="icons">
+                            <a href="https://www.linkedin.com/in/melissa-van-dijk" target="_blank"><i class="fabI fab fa-linkedin"></i></a>
+                            <a href="https://nl.pinterest.com/mqvandijk" target="_blank"><i class="fabI fab fa-pinterest"></i></a>
+                            <a href="https://www.instagram.com/my.point.of.focus" target="_blank"><i class="fabI fab fa-instagram"></i></a>
+                        </p>
+                    </article>
+
+                    <!-- Here you find the contact form field -->
+                    <!-- <article class="contactForm">
+                        <form action="../sendgrid/sendmail.php" method="post">
+                            <label for="name">Naam*</label><br>
+                            <input type="text" id="name" name="name" required="required" placeholder="Uw naam">
+                            <label for="email">E-mail*</label><br>
+                            <input type="email" id="email" name="email" required="required" placeholder="Uw e-mailadres">
+                            <label for="topic">Onderwerp</label><br>
+                            <input type="text" id="topic" name="topic" placeholder="Het onderwerp">
+                            <label for="message">Bericht*</label><br>
+                            <textarea id="message" name="message" required="required" placeholder="Uw bericht"></textarea><br>
+                            <input type="submit" value="Verzenden">
+                        </form>
+                    </article> -->
+                </div>
+            </main>
+
+            <!-- Here starts the footer of the website
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <footer>
+                <!-- Social icons -->
+                <p>
+                    <a href="https://www.linkedin.com/in/melissa-van-dijk" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://nl.pinterest.com/mqvandijk" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/my.point.of.focus" target="_blank"><i class="fab fa-instagram"></i></a>
+                </p>
+
+                <!-- CV Button -->
+                <a href="../documents/CV_Melissa_van_Dijk.pdf" target="_blank">
+                    <!-- This button is located between link tags, so that you will be taken to the linked page when you click on it -->
+                    <button class="primary cv" type="button">CV</button>
+                </a>
+                
+                <!-- Copyright line -->
+                <p class="copy">&copy; 2021 - Melissa van Dijk</p>
+            </footer>
         </div>
-
-        <!-- Here starts the main content of the website
-        ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <main>
-            <!-- This is the page intro text -->
-            <h3 class="pageTitle">
-                Laten we samen een project starten!
-                <br class="on1">
-                Neem gerust contact met mij op.
-            </h3>
-            
-            <!-- Here you find the contactInfo & contactForm cards -->
-            <div class="contact">
-
-                <!-- This is the contact information -->
-                <article class="contactInfo">
-                    <section class="mail">
-                        <h4>E-mailadres</h4>
-                        <p><a href="mailto:info@melissavandijk.nl">info@melissavandijk.nl</a></p>
-                    </section>
-                    <section class="tell">
-                        <h4>Mobiele nummer</h4>
-                        <p><a href="tel:+31 6 51062295">+31 6 51062295</a></p>
-                    </section>
-
-                    <!-- Social icons -->
-                    <p class="icons">
-                        <a href="https://www.linkedin.com/in/melissa-van-dijk" target="_blank"><i class="fabI fab fa-linkedin"></i></a>
-                        <a href="https://nl.pinterest.com/mqvandijk" target="_blank"><i class="fabI fab fa-pinterest"></i></a>
-                        <a href="https://www.instagram.com/my.point.of.focus" target="_blank"><i class="fabI fab fa-instagram"></i></a>
-                    </p>
-                </article>
-
-                <!-- Here you find the contact form field -->
-                <!-- <article class="contactForm">
-                    <form action="../sendgrid/sendmail.php" method="post">
-                        <label for="name">Naam*</label><br>
-                        <input type="text" id="name" name="name" required="required" placeholder="Uw naam">
-                        <label for="email">E-mail*</label><br>
-                        <input type="email" id="email" name="email" required="required" placeholder="Uw e-mailadres">
-                        <label for="topic">Onderwerp</label><br>
-                        <input type="text" id="topic" name="topic" placeholder="Het onderwerp">
-                        <label for="message">Bericht*</label><br>
-                        <textarea id="message" name="message" required="required" placeholder="Uw bericht"></textarea><br>
-                        <input type="submit" value="Verzenden">
-                    </form>
-                </article> -->
-            </div>
-        </main>
-
-        <!-- Here starts the footer of the website
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <footer>
-            <!-- Social icons -->
-            <p>
-                <a href="https://www.linkedin.com/in/melissa-van-dijk" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://nl.pinterest.com/mqvandijk" target="_blank"><i class="fab fa-pinterest"></i></a>
-                <a href="https://www.instagram.com/my.point.of.focus" target="_blank"><i class="fab fa-instagram"></i></a>
-            </p>
-
-            <!-- CV Button -->
-            <a href="../documents/CV_Melissa_van_Dijk.pdf" target="_blank">
-                <!-- This button is located between link tags, so that you will be taken to the linked page when you click on it -->
-                <button class="primary cv" type="button">CV</button>
-            </a>
-            
-            <!-- Copyright line -->
-            <p class="copy">&copy; 2021 - Melissa van Dijk</p>
-        </footer>
     </body>
 
 </html>
