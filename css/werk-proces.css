@@ -14,18 +14,23 @@ main {
     margin-top: 191px;
 }
 
+main.small {
+    margin-top: 128px;
+}
+
 
 /*--------------------------------------------------
     CSS for the banner
 ---------------------------------------------------*/
 section.banner {
     overflow: hidden;
+    width: 100vw;
 }
 
 /* The banner image with text */
 .headimg {
     min-height: 200px;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -48,9 +53,15 @@ section.banner {
 }
 
 .banner-text {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     position: fixed;
+}
+
+.banner-text.small {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
 }
 
 .banner-text h2 {
@@ -285,24 +296,22 @@ h3.part2, h3.part3 {
 /*--------------------------------------------------
     The breakpoints
 ---------------------------------------------------*/
-
-@media (min-width: 320px) {
-    .part1img, .part2img, .part3img {
-        width: 290px;
-        height: 290px;
+@media (min-width: 300px) {
+    .banner-text {
+        margin-left: 22px;
+        margin-right: 22px;
     }
 }
 
-@media (min-width: 328px) {
-    main.small {
-        margin-top: 128px;
+@media (min-width: 320px) {
+    .banner-text {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
-    /* The banner */
-    .banner-text.small {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100vw;
+    .part1img, .part2img, .part3img {
+        width: 290px;
+        height: 290px;
     }
 }
 
@@ -321,7 +330,7 @@ h3.part2, h3.part3 {
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
-    main {
+    main, main.small {
         margin-top: 168px;
     }
 
@@ -390,7 +399,7 @@ h3.part2, h3.part3 {
 
 /* Tablet version (768px) */
 @media (min-width: 768px) {
-    main {
+    main, main.small {
         margin-top: 214px !important;
     }
 
@@ -548,7 +557,7 @@ h3.part2, h3.part3 {
 
 /* Laptop version (1024px) */
 @media (min-width: 1024px) {
-    main {
+    main, main.small {
         margin-top: 274px !important;
     }
 
@@ -660,7 +669,7 @@ h3.part2, h3.part3 {
 
 /* Larger laptop version (1280px) */
 @media (min-width: 1280PX) {
-    main {
+    main, main.small {
         margin-top: 341px !important;
     }
 
@@ -738,7 +747,7 @@ h3.part2, h3.part3 {
 
 /* Intermediate version of laptop and desktop (1680px) */
 @media (min-width: 1680PX) {
-    main {
+    main, main.small {
         margin-top: 430px !important;
     }
 
@@ -820,7 +829,7 @@ h3.part2, h3.part3 {
 
 /* Desktop version (1920px) */
 @media (min-width: 1920PX) {
-    main {
+    main, main.small {
         margin-top: 490px !important;
     }
 

@@ -4,12 +4,6 @@
 
 
 /*--------------------------------------------------
-    CSS for the banner
----------------------------------------------------*/
-
-
-
-/*--------------------------------------------------
     The .prototype article
 ---------------------------------------------------*/
 .prototypeButtons {
@@ -55,6 +49,11 @@ button.primary.ROCbnt1 {
 
 /* Intermediate version of mobile and tablet (450px) */
 @media (min-width: 450px) {
+    main {
+        margin-top: 168px;
+    }
+    /*----------------------------------------*/
+
     /* The .prototype article */
     .prototypeButtons {
         margin-left: 20px;
